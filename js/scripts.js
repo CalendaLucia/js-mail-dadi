@@ -10,9 +10,11 @@ const emailList = [ "mariorossi2@gmail.com", "martaamet40@gmail.com", "giulioces
 
 for (let i = 0; i < emailList.length; i++) {
 
-    if ( request  == emailList[i] ) {
+    let validEmail = emailList[i];
+
+    if ( request  == validEmail ) {
    
-        console.log("Login effettuato"  )
+        console.log("Login effettuato" + " " + validEmail )
        
     
     
