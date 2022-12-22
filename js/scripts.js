@@ -8,14 +8,23 @@ const emailList = [ "mariorossi2@gmail.com", "martaamet40@gmail.com", "giulioces
 
 // effettuo il controllo degli input 
 
-if ( emailList[0] == request ) {
-   
-    console.log("Login effettuato" + " " + emailList[0])
-    // stampa un messaggio appropriato sull'esito del controllo
-    
-} else   {
+for (let i = 0; i < emailList.length; i++) {
 
-    console.log("Mi dispiace, ma non hai l' autorizzazione per entrare")
-     // stampa un messaggio appropriato sull'esito del controllo
+    if ( request  == emailList[i] ) {
+   
+        console.log("Login effettuato"  )
+       
+    
+    
+        // stampa un messaggio appropriato sull'esito del controllo
+        
+    } else   {
+    
+        console.log("Mi dispiace, ma non hai l' autorizzazione per entrare")
+         // stampa un messaggio appropriato sull'esito del controllo
+    }
+    
+    
+    
 }
 
