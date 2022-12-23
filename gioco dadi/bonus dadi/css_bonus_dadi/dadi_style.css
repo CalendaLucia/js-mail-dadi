@@ -1,0 +1,149 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#box div
+{
+position: absolute;
+height: 250px;
+width: 250px;
+border: 40px solid #0546eb;
+border-radius: 50px;
+text-align: center;
+
+}
+ 
+#box
+{
+animation-name: animation;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 20s;
+margin:80;
+transform-style: preserve-3d;
+transform-origin: 125px 125px 0;
+}
+ 
+#box .one { 
+transform: translateZ(125px);
+background-color:#0546eb; 
+justify-content:center;
+align-items:center;
+  
+
+  
+}
+
+#box .two { 
+transform: rotateX(-90deg) translateZ(125px);
+background-color:#0546eb;
+align-items:center;
+
+  
+  
+}
+
+#box .three {
+transform: rotateY(90deg) rotateX(90deg) translateZ(125px);
+background-color:#0546eb;
+justify-content:space-between;
+align-items:center;
+ 
+}
+
+#box .four {
+transform: rotateY(180deg) rotateZ(90deg) translateZ(125px);
+background-color:#0546eb;  
+}
+
+#box .five { 
+transform: rotateY(-90deg) rotateZ(90deg) translateZ(125px);
+background-color:#0546eb;  
+}
+
+#box .six 
+{
+transform: rotateY(90deg) translateZ(125px);
+background-color:#0546eb;  
+}
+ 
+@keyframes animation
+{
+from,to{}
+16% { transform: rotateY(-90deg);}
+33% { transform: rotateY(-90deg) rotateZ(135deg);}
+50% { transform: rotateY(225deg) rotateZ(135deg);}
+66% { transform: rotateY(135deg) rotateX(135deg);}
+83% { transform: rotateX(135deg);}
+}
+
+.dot {
+  display:inline-block;
+  background-color:white;
+  width:80px;
+  height:80px;
+  border-radius:50%;
+}
+
+.face {
+  display:flex;
+  position:relative;
+
+ 
+}
+
+.bottom {
+  align-self:flex-start;
+}
+
+.left, .top {
+   align-self:flex-end;
+}
+
+.bottom-right {
+   position:absolute;
+   bottom:0px;
+   right:0px;
+}
+
+.right {
+   position:absolute;
+   top:0px;
+  left:0px;
+}
+  
+  .bottom-left {
+    position:absolute;
+    top:0px;
+     right:0px;
+  }
+    
+  
+.center {
+   align-self:center;
+}
+
+.myright {
+  position:absolute;
+   bottom:0px;
+   right:0px;
+ 
+}
+
+.myleft {
+    position:absolute;
+   bottom:0px;
+   left:0px;
+}
+
+.mycenter {
+  position:absolute;
+   bottom:0px;
+   
+}
+
+.second-bottom {
+  margin-left: 40px;
+}

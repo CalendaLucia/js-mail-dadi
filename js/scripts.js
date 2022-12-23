@@ -6,6 +6,7 @@ const request = prompt("Inserisci la tua email");
 
 const emailList = [ "mariorossi2@gmail.com", "martaamet40@gmail.com", "giuliocesare3@gmail.com", "massimotroisi55@gmail.com" ]
 
+let userFound = false;
 // effettuo il controllo degli input 
 
 for (let i = 0; i < emailList.length; i++) {
@@ -14,19 +15,23 @@ for (let i = 0; i < emailList.length; i++) {
 
     if ( request  == validEmail ) {
    
-        console.log("Login effettuato" + " " + validEmail )
-       
+        console.log("Login effettuato" + " " + validEmail );
+        alert("puoi entrare")
+
+        userFound = true;
+
     
     
-        // stampa un messaggio appropriato sull'esito del controllo
-        
-    } else   {
+}
+}
+
+
+if (userFound == true) {             
+  
+    console.log("sei entrato")
     
-        console.log("Mi dispiace, ma non hai l' autorizzazione per entrare")
-         // stampa un messaggio appropriato sull'esito del controllo
-    }
-    
-    
-    
+} else {
+   
+    console.log("non sei entrato")
 }
 
