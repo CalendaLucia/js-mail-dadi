@@ -1,11 +1,16 @@
 * {
-    padding: 0px;
+    padding: 0 px;
     margin: 0px;
     box-sizing: border-box;
 }
 
-#box div
-{
+#view {
+    width: 350px;
+    height: 250px;
+    margin: 80px auto 0 auto ;
+}
+
+#box div {
 position: absolute;
 height: 250px;
 width: 250px;
@@ -15,8 +20,7 @@ text-align: center;
 
 }
  
-#box
-{
+#box {
 animation-name: animation;
 animation-timing-function: ease-in-out;
 animation-iteration-count: infinite;
@@ -31,16 +35,13 @@ transform: translateZ(125px);
 background-color:#0546eb; 
 justify-content:center;
 align-items:center;
-  
-
-  
 }
 
 #box .two { 
 transform: rotateX(-90deg) translateZ(125px);
 background-color:#0546eb;
+justify-content:space-around;
 align-items:center;
-
   
   
 }
@@ -129,7 +130,6 @@ from,to{}
   position:absolute;
    bottom:0px;
    right:0px;
- 
 }
 
 .myleft {
@@ -141,9 +141,6 @@ from,to{}
 .mycenter {
   position:absolute;
    bottom:0px;
-   
+   left: calc(100% / 3);
 }
 
-.second-bottom {
-  margin-left: 40px;
-}
