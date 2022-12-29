@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+body {
+  background-image: url("img/sfondo.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .container{
     perspective: 1000px;
     perspective-origin: 50% 50%;
@@ -16,7 +22,7 @@
 
   .container .cube{
     position: absolute;
-    left: 20%;
+    left: 35%;
     top: 30%;
     height: 200px;
     width: 200px;
@@ -35,8 +41,9 @@
   .container .cube div span{
     font-size: 32px;
     color: yellowgreen;
-  
   }
+
+
   .container .cube .front{
     background: rgba(210, 0, 210, 0.7);;
     transform: translateZ(100px);
@@ -143,7 +150,7 @@
   #show-results {
     display: none;
     width: 100%;
-    padding: 30px 0px;
+    padding: 50px 0px;
   
   }
 
