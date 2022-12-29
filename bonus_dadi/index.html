@@ -4,49 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <title>Gioco Dadi</title>
 </head>
 <body>
 
-    <main>
-      <div id="view">
-        <div class="box">
-            <div class="one face">
-                <span class="dot"></span>
-            </div>
-            <div class="second face">
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </div>
-            <div class="third face">
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </div>
-            <div class="fourth face">
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </div>
-            <div class="fifth face">
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </div>
-            <div class="sixth face">
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </div>
-        </div>
-      </div>
+    <div class="container">
+
+		<div id="show-results">
+			<div class="text-results">
+			   <h5 class="result"></h5>
+			</div>
+		  </div>
+
+		<div class="cube" id="cube">
+			<div class="front">
+				<span class="fas fa-circle"></span>
+			</div>
+			<div class="back">
+					<!-- i use pre tag to align dots -->
+					<pre class="firstPre"><span class="fas fa-circle"></span>    <span class="fas fa-circle"></span>    <span class="fas fa-circle"></span></pre><br>
+					<pre class="secondPre"><span class="fas fa-circle"></span>    <span class="fas fa-circle"></span>    <span class="fas fa-circle"></span></pre>
+			</div>
+			<div class="top">
+				<span class="fas fa-circle"></span>
+				<span class="fas fa-circle"></span>
+			</div>
+			<div class="left">
+				<span class="fas fa-circle"></span>
+				<span class="fas fa-circle"></span>
+				<span class="fas fa-circle"></span>
+
+			</div>
+			<div class="right">
+				<span class="fas fa-circle"></span>
+				<span class="fas fa-circle"></span>
+				<span class="fas fa-circle"></span>
+				<span class="fas fa-circle"></span>
+				<span class="fas fa-circle"></span>
+
+			</div>
+			<div class="bottom">
+				<span class="fas fa-circle"></span>
+				<span class="fas fa-circle"></span>
+				<span class="fas fa-circle"></span>
+				<span class="fas fa-circle"></span>
+			</div>
+		</div>
+
+	</div>
+
+     
+
     </main>
 
     <script type="text/javascript" src="js/scripts.js"></script>
